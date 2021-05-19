@@ -6,7 +6,18 @@ namespace _0212Conditionals
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            //Homework
+            System.Console.Write("Please Enter your name:");
+            var userName = Console.ReadLine();
+            if (userName.ToLower() == "tim")
+            {
+                System.Console.WriteLine($"Welcome professor Tim.");
+            }else{
+                System.Console.WriteLine($"Welcome student {userName}.");
+            }
+
+            Console.ReadLine();
         }
     }
 }

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0103Introduction", "0103Int
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0211BasicVariables", "0211BasicVariables\0211BasicVariables.csproj", "{AC5BC888-1D7C-4A07-A69A-1776BA686951}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0213TypeConversion", "0213TypeConversion\0213TypeConversion.csproj", "{B504DBCF-9560-45EB-86DE-A67AD1E0E773}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{AC5BC888-1D7C-4A07-A69A-1776BA686951}.Release|x64.Build.0 = Release|Any CPU
 		{AC5BC888-1D7C-4A07-A69A-1776BA686951}.Release|x86.ActiveCfg = Release|Any CPU
 		{AC5BC888-1D7C-4A07-A69A-1776BA686951}.Release|x86.Build.0 = Release|Any CPU
+		{B504DBCF-9560-45EB-86DE-A67AD1E0E773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B504DBCF-9560-45EB-86DE-A67AD1E0E773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B504DBCF-9560-45EB-86DE-A67AD1E0E773}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B504DBCF-9560-45EB-86DE-A67AD1E0E773}.Debug|x64.Build.0 = Debug|Any CPU
+		{B504DBCF-9560-45EB-86DE-A67AD1E0E773}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B504DBCF-9560-45EB-86DE-A67AD1E0E773}.Debug|x86.Build.0 = Debug|Any CPU
+		{B504DBCF-9560-45EB-86DE-A67AD1E0E773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B504DBCF-9560-45EB-86DE-A67AD1E0E773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B504DBCF-9560-45EB-86DE-A67AD1E0E773}.Release|x64.ActiveCfg = Release|Any CPU
+		{B504DBCF-9560-45EB-86DE-A67AD1E0E773}.Release|x64.Build.0 = Release|Any CPU
+		{B504DBCF-9560-45EB-86DE-A67AD1E0E773}.Release|x86.ActiveCfg = Release|Any CPU
+		{B504DBCF-9560-45EB-86DE-A67AD1E0E773}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
