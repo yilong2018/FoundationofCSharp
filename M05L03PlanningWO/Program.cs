@@ -83,8 +83,75 @@ namespace M05L03PlanningWO
 
 
             // [D]ata design 
-            // PlayerModel: UserName, Ship, FireAmount, FiredPosition
+            // PlayerModel: UserName, Ships, FireAmount, FiredPosition, Winner
             // ShipModel: Position, IsSunked, 
+
+
+
+            /////// The corey U , L, D
+            //// [U]ser interface design (2 min a sketch -> take hole 10-15 mi)
+            // UI Design
+            // Welcome message
+            // Ask user1 for their name
+            // Ask user 1 for their 5 ship placements
+            //      Ask for placement
+            //      Determine if it is a valid spot
+            //      Store
+            //      clear
+            // Ask user 2 for their 5 ship placements
+            //      Ask for placement
+            //      Determine if it is a valid spot
+            //      Store
+            //      clear
+            // Display grid to where user 1 has fired
+            // Ask user1: Where would you like to fire on ?
+            //      Verify a valid spot.
+            //      Check results
+            //      Store shot.
+            //      clear
+            // Display the score user 1:2 ships left, user 2:4 shiops left
+            // Repeat with user2
+            // Loop until someone wins
+            // Print out winner's name and number of shots taken
+            // Wait for user to say they are done.
+            // Exit
+
+            // UI Design continue:
+            // A1 A2 A3 O A5
+            // B1 B2 B3 O B5
+            // C1 C2 C3 X C5
+            // D1 D2 O D4 D5
+            // E1 E2 E3 O E5
+
+            //// [L]ogic design
+            // Clear display
+            // enum
+            // Method: Asking for name
+            // Method: Get ship placement
+            // Method: Determine if valid spot for ship
+            // Storing ship information: List per user?
+            // Storing shot information: List per user?
+            // Method: create the grid for each user.
+            // Method: print out grid.
+            // Method: fire on opponent.
+            // Method: determine if a shot can be taken & outcome
+            // Method: display score
+            // Method: print winner and shot taken
+
+            // [D]ata design 
+            // PlayerInfo
+            //      User' Name: string
+            //      User's ship location: list<GridSpot>
+            //      User's shot grid: List<GridSpot>
+            //
+            // GridSpot
+            //      spotletter-string
+            //      spotnumber-int
+            //      status-string[possible enum]
+
+
+            // Homework: Create a class library with your data models. After you have completed it,
+            // you can compare it to what we do in the next lesson.
 
 
             Console.ReadLine();
