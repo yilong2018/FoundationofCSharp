@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M06L11MiniPExtensionMethods", "M06L11MiniPExtensionMethods\M06L11MiniPExtensionMethods.csproj", "{80439664-5FD4-4B2B-8CCA-38D9FF23C9D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWExtentionMethods", "HWExtentionMethods\HWExtentionMethods.csproj", "{42CC0B0A-D204-4A6C-A1CA-823AB16855FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80439664-5FD4-4B2B-8CCA-38D9FF23C9D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80439664-5FD4-4B2B-8CCA-38D9FF23C9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80439664-5FD4-4B2B-8CCA-38D9FF23C9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80439664-5FD4-4B2B-8CCA-38D9FF23C9D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42CC0B0A-D204-4A6C-A1CA-823AB16855FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42CC0B0A-D204-4A6C-A1CA-823AB16855FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42CC0B0A-D204-4A6C-A1CA-823AB16855FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42CC0B0A-D204-4A6C-A1CA-823AB16855FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E4D7EDA-B9A1-4355-899E-F0902E79CEE2}
+	EndGlobalSection
+EndGlobal
