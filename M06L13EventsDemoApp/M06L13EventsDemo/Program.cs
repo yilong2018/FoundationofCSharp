@@ -10,10 +10,11 @@ namespace M06L13EventsDemo
     {
         static void Main(string[] args)
         {
-            //CollegeClassModel history = new CollegeClassModel("History 101", 3);
-            //CollegeClassModel math = new CollegeClassModel("Calculus 201", 2);
+            CollegeClassModel history = new CollegeClassModel("History 101", 3);
+            CollegeClassModel math = new CollegeClassModel("Calculus 201", 2);
 
-            //history.EnrollmentFull += History_EnrollmentFull;
+            history.EnrollmentFull += History_EnrollmentFull;
+
 
             //history.SignUpStudent("Tim Corey").PrintToConsole();
             //history.SignUpStudent("Sue Storm").PrintToConsole();
