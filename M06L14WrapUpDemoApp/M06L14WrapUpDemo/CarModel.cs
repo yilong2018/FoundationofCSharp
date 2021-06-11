@@ -1,0 +1,8 @@
+﻿namespace M06L14WrapUpDemo
+{
+    public class CarModel
+    {
+        public string Manufacturer { get; set; }
+        public string Model { get; set; }
+    }
+}

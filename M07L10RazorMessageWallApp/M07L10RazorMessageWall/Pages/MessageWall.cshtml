@@ -1,0 +1,30 @@
+﻿@page
+@model M07L10RazorMessageWall.Pages.MessageWallModel
+@{
+    ViewData["Title"] = "MessageWall";
+}
+
+<h1>Messge Wall</h1>
+
+<form method="post">
+    <div class="form-group">
+        @for (int i = 0; i < Model.Messages.Count; i++)
+        {
+            <input type="hidden" asp-for="Messages[i]" />
+        }
+        <input asp-for="Message" type="text" placeholder="Type your message" />
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+<h2>There are the messages:</h2>
+@foreach (var item in Model.Messages)
+{
+    <ul>
+        <li>
+            @item
+        </li>
+    </ul>
+}
+
+@* Homework: Build a Razor Pages application that has a simple data-entry page with First and Last name fileds. Have a button say "Hi {FN} {LN}" wehn *@

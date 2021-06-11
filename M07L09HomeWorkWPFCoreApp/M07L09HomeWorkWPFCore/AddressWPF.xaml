@@ -1,0 +1,34 @@
+﻿<Window x:Class="M07L09HomeWorkWPFCore.AddressWPF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:M07L09HomeWorkWPFCore"
+        mc:Ignorable="d" FontSize="28"
+        Title="AddressWPF" Height="300" Width="419">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+            <TextBlock x:Name="streetBlock"  Margin="0 20 5 5">Street:</TextBlock>
+            <TextBox x:Name="streetText" Margin="5 15 5 5" MinWidth="200" MaxWidth="400"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+            <TextBlock x:Name="cityBlock" Margin="16 10 ">City:</TextBlock>
+            <TextBox x:Name="cityText" Margin="5 5" MinWidth="200" MaxWidth="400"/>
+        </StackPanel>
+
+        <Button x:Name="addAddressButton"  Grid.Row="2" Grid.Column="1" Margin="10 10" Click="addAddressButton_Click">Add Address</Button>
+    </Grid>
+</Window>
