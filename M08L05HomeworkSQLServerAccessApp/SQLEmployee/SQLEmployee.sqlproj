@@ -61,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\table\People.sql" />
-    <Build Include="dbo\table\Address.sql" />
     <Build Include="dbo\table\PeopleAddresses.sql" />
+    <Build Include="dbo\table\Address.sql" />
   </ItemGroup>
 </Project>

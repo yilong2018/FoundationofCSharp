@@ -16,6 +16,21 @@ namespace DataAccess.Library
             _db = new SqlDataAccess();
         }
 
+        public void DeletePerson(int Id)
+        {
+            string sqlStr = "delete from dbo.people where Id=@Id";
+            _db.SaveData(sqlStr, new { Id }, _connectionString);
+        }
+        public void UpdatePerson(PersonModel person)
+        {
+            string sqlstr = "update dbo.People Set FirstName = @FirstName, LastName = @LastName where Id=@Id;";
+            _db.SaveData(sqlstr, person, _connectionString);
+        }
+        public List<PersonModel> GetAllPeople()
+        {
+            string sql = "select Id,FirstName,LastName from dbo.people";
+            return _db.LoadData<PersonModel, dynamic>(sql, new { }, _connectionString);
+        }
         public void CreatePerson(PersonModel person)
         {
             string sql = "insert into dbo.people (FirstName, LastName) values (@FirstName, @LastName)";

@@ -22,7 +22,7 @@ namespace M08L05SQLServerUI
 
             RemovePhoneNumberFromContact(sql, 1, 1);
 
-            Console.WriteLine("Done processing.");
+            Console.WriteLine("Done processing SQL Server.");
 
             Console.ReadLine();
         }
