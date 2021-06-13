@@ -12,20 +12,36 @@ namespace M07L06MessageWall
 {
     public partial class Dashboard : Form
     {
+        BindingList<string> messages = new BindingList<string>();
         public Dashboard()
         {
             InitializeComponent();
+
+            WireUpLists();
         }
 
-        private void HelloWorldButton_Click(object sender, EventArgs e)
+        private void WireUpLists()
         {
-            MessageBox.Show($"Hello { firstNameText.Text }");
-            firstNameText.Text = "";
+            messageListBox.DataSource = messages;
+            messageListBox.DisplayMember = nameof(Dashboard.Text);
         }
 
-        private void GoodByButton_Click(object sender, EventArgs e)
+        private void addMessage_Click(object sender, EventArgs e)
         {
-
+            if ( string.IsNullOrWhiteSpace(messageText.Text) )
+            {
+                MessageBox.Show("Please enter a message before trying to add it to the list.",
+                    "Blnank Message Field", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                messages.Add(messageText.Text);
+                messageText.Text = "";
+            }
+            messageText.Focus();
         }
+
+        //Homework: Build a WinForms application that has a simple data-entry screen with First
+        //and Last name fields. Have a button say "Hi {FN} {LN}" when pressed.
     }
 }

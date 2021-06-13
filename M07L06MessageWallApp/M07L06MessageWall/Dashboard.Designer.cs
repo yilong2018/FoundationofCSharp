@@ -29,58 +29,73 @@ namespace M07L06MessageWall
         /// </summary>
         private void InitializeComponent()
         {
-            this.helloWorldButton = new System.Windows.Forms.Button();
-            this.firstNameText = new System.Windows.Forms.TextBox();
-            this.goodByeLable = new System.Windows.Forms.Label();
-            this.goodByButton = new System.Windows.Forms.Button();
+            this.messageLabel = new System.Windows.Forms.Label();
+            this.messageText = new System.Windows.Forms.TextBox();
+            this.messageListBox = new System.Windows.Forms.ListBox();
+            this.messageListBoxLabel = new System.Windows.Forms.Label();
+            this.addMessage = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // helloWorldButton
+            // messageLabel
             // 
-            this.helloWorldButton.Location = new System.Drawing.Point(169, 279);
-            this.helloWorldButton.Name = "helloWorldButton";
-            this.helloWorldButton.Size = new System.Drawing.Size(132, 35);
-            this.helloWorldButton.TabIndex = 0;
-            this.helloWorldButton.Tag = "1234";
-            this.helloWorldButton.Text = "Hello World";
-            this.helloWorldButton.UseVisualStyleBackColor = true;
-            this.helloWorldButton.Click += new System.EventHandler(this.HelloWorldButton_Click);
+            this.messageLabel.AutoSize = true;
+            this.messageLabel.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold);
+            this.messageLabel.Location = new System.Drawing.Point(74, 53);
+            this.messageLabel.Name = "messageLabel";
+            this.messageLabel.Size = new System.Drawing.Size(241, 64);
+            this.messageLabel.TabIndex = 0;
+            this.messageLabel.Text = "Message";
             // 
-            // firstNameText
+            // messageText
             // 
-            this.firstNameText.Location = new System.Drawing.Point(312, 222);
-            this.firstNameText.Name = "firstNameText";
-            this.firstNameText.Size = new System.Drawing.Size(220, 28);
-            this.firstNameText.TabIndex = 1;
+            this.messageText.Location = new System.Drawing.Point(346, 50);
+            this.messageText.Name = "messageText";
+            this.messageText.Size = new System.Drawing.Size(557, 71);
+            this.messageText.TabIndex = 1;
             // 
-            // goodByeLable
+            // messageListBox
             // 
-            this.goodByeLable.AutoSize = true;
-            this.goodByeLable.Location = new System.Drawing.Point(166, 232);
-            this.goodByeLable.Name = "goodByeLable";
-            this.goodByeLable.Size = new System.Drawing.Size(98, 18);
-            this.goodByeLable.TabIndex = 2;
-            this.goodByeLable.Text = "First Name";
+            this.messageListBox.FormattingEnabled = true;
+            this.messageListBox.ItemHeight = 62;
+            this.messageListBox.Location = new System.Drawing.Point(85, 283);
+            this.messageListBox.Name = "messageListBox";
+            this.messageListBox.Size = new System.Drawing.Size(818, 500);
+            this.messageListBox.TabIndex = 3;
+            this.messageListBox.TabStop = false;
             // 
-            // goodByButton
+            // messageListBoxLabel
             // 
-            this.goodByButton.Location = new System.Drawing.Point(320, 279);
-            this.goodByButton.Name = "goodByButton";
-            this.goodByButton.Size = new System.Drawing.Size(92, 35);
-            this.goodByButton.TabIndex = 3;
-            this.goodByButton.Text = "Good Bye";
-            this.goodByButton.UseVisualStyleBackColor = true;
-            this.goodByButton.Click += new System.EventHandler(this.GoodByButton_Click);
+            this.messageListBoxLabel.AutoSize = true;
+            this.messageListBoxLabel.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold);
+            this.messageListBoxLabel.Location = new System.Drawing.Point(74, 197);
+            this.messageListBoxLabel.Name = "messageListBoxLabel";
+            this.messageListBoxLabel.Size = new System.Drawing.Size(265, 64);
+            this.messageListBoxLabel.TabIndex = 0;
+            this.messageListBoxLabel.Text = "Messages";
+            // 
+            // addMessage
+            // 
+            this.addMessage.Location = new System.Drawing.Point(929, 48);
+            this.addMessage.Name = "addMessage";
+            this.addMessage.Size = new System.Drawing.Size(133, 72);
+            this.addMessage.TabIndex = 2;
+            this.addMessage.Text = "Add";
+            this.addMessage.UseVisualStyleBackColor = true;
+            this.addMessage.Click += new System.EventHandler(this.addMessage_Click);
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(29F, 62F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.goodByButton);
-            this.Controls.Add(this.goodByeLable);
-            this.Controls.Add(this.firstNameText);
-            this.Controls.Add(this.helloWorldButton);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1098, 856);
+            this.Controls.Add(this.addMessage);
+            this.Controls.Add(this.messageListBox);
+            this.Controls.Add(this.messageText);
+            this.Controls.Add(this.messageListBoxLabel);
+            this.Controls.Add(this.messageLabel);
+            this.Font = new System.Drawing.Font("微软雅黑", 18F);
+            this.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.Name = "Dashboard";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -90,10 +105,11 @@ namespace M07L06MessageWall
 
         #endregion
 
-        private System.Windows.Forms.Button helloWorldButton;
-        private System.Windows.Forms.TextBox firstNameText;
-        private System.Windows.Forms.Label goodByeLable;
-        private System.Windows.Forms.Button goodByButton;
+        private System.Windows.Forms.Label messageLabel;
+        private System.Windows.Forms.TextBox messageText;
+        private System.Windows.Forms.ListBox messageListBox;
+        private System.Windows.Forms.Label messageListBoxLabel;
+        private System.Windows.Forms.Button addMessage;
     }
 }
 
