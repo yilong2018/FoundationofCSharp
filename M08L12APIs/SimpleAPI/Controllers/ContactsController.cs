@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 namespace SimpleAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ContactsController : ControllerBase
     {
         private IConfiguration _config;

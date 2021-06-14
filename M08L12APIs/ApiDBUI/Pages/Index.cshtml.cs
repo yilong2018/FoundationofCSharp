@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using System.Net.Http;
 using System.Text.Json;
+using ApiDBUI.Models;
 
 namespace ApiDBUI.Pages
 {
@@ -21,20 +22,26 @@ namespace ApiDBUI.Pages
             _httpClientFactory = httpClientFactory;
         }
 
-        public void OnGet()
+        public async Task OnGet()
         {
-
+            await GetAllContacts();
         }
 
         private async Task GetAllContacts(){
             var _client = _httpClientFactory.CreateClient();
-            var response = await _client.GetAsync("https://localhost:5001/weatherforecast");
+            var response = await _client.GetAsync("https://localhost:5002/api/contacts");
+
+            List<ContactModel> contacts;
 
             if ( response.IsSuccessStatusCode )
             {
-                var option = new JsonSerializerOptions{
+                var options = new JsonSerializerOptions{
                     PropertyNameCaseInsensitive = true
                 };
+                string responseText = await response.Content.ReadAsStringAsync();
+                contacts = JsonSerializer.Deserialize<List<ContactModel>>(responseText, options);
+            }else{
+                throw new Exception(response.ReasonPhrase);
             }
         }
     }
