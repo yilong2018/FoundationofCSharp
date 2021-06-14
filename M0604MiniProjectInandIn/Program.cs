@@ -136,6 +136,15 @@ namespace M0604MiniProjectInandIn
         }
     }
 
-    //Homework: Build a similar project to what we did here but change
+    // Homework: Build a similar project to what we did here but change
     // it just a bit so you are sure you understand it.
+    public abstract class Toy{
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+    }
+    public class Cat : Toy{}
+    public class Dog : Toy{}
+    public class Car : Toy{}
+
+
 }
