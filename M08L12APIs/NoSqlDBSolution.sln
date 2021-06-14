@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAPI", "SimpleAPI\SimpleAPI.csproj", "{944CD172-C7FD-449B-8DFF-94491C9AD947}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleAPI", "SimpleAPI\SimpleAPI.csproj", "{944CD172-C7FD-449B-8DFF-94491C9AD947}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLibrary", "DataAccessLibrary\DataAccessLibrary.csproj", "{336187E0-E55C-40AA-B44A-38F8B00ABB0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLibrary", "DataAccessLibrary\DataAccessLibrary.csproj", "{336187E0-E55C-40AA-B44A-38F8B00ABB0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDBUI", "ApiDBUI\ApiDBUI.csproj", "{38FA8896-7E04-4ADD-B75A-342CA0E90977}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDBUI", "ApiDBUI\ApiDBUI.csproj", "{38FA8896-7E04-4ADD-B75A-342CA0E90977}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoDBUI", "MongoDBUI\MongoDBUI.csproj", "{038B54C5-04AC-4F7B-BFC5-9C16A7D1D4D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,9 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{944CD172-C7FD-449B-8DFF-94491C9AD947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -58,5 +57,23 @@ Global
 		{38FA8896-7E04-4ADD-B75A-342CA0E90977}.Release|x64.Build.0 = Release|Any CPU
 		{38FA8896-7E04-4ADD-B75A-342CA0E90977}.Release|x86.ActiveCfg = Release|Any CPU
 		{38FA8896-7E04-4ADD-B75A-342CA0E90977}.Release|x86.Build.0 = Release|Any CPU
+		{038B54C5-04AC-4F7B-BFC5-9C16A7D1D4D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038B54C5-04AC-4F7B-BFC5-9C16A7D1D4D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038B54C5-04AC-4F7B-BFC5-9C16A7D1D4D9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{038B54C5-04AC-4F7B-BFC5-9C16A7D1D4D9}.Debug|x64.Build.0 = Debug|Any CPU
+		{038B54C5-04AC-4F7B-BFC5-9C16A7D1D4D9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{038B54C5-04AC-4F7B-BFC5-9C16A7D1D4D9}.Debug|x86.Build.0 = Debug|Any CPU
+		{038B54C5-04AC-4F7B-BFC5-9C16A7D1D4D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038B54C5-04AC-4F7B-BFC5-9C16A7D1D4D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{038B54C5-04AC-4F7B-BFC5-9C16A7D1D4D9}.Release|x64.ActiveCfg = Release|Any CPU
+		{038B54C5-04AC-4F7B-BFC5-9C16A7D1D4D9}.Release|x64.Build.0 = Release|Any CPU
+		{038B54C5-04AC-4F7B-BFC5-9C16A7D1D4D9}.Release|x86.ActiveCfg = Release|Any CPU
+		{038B54C5-04AC-4F7B-BFC5-9C16A7D1D4D9}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3661CDA2-149C-4978-BC25-72FB2303B7D1}
 	EndGlobalSection
 EndGlobal
