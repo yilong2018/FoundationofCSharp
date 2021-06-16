@@ -11,7 +11,7 @@ namespace HotelAppLibrary.Data
     public class SqlData
     {
         private readonly ISqlDataAccess _db;
-        private const string connectionString = "SqlDb";
+        private const string connectionStringName = "SqlDb";
 
         public SqlData(ISqlDataAccess db)
         {
@@ -19,9 +19,9 @@ namespace HotelAppLibrary.Data
         }
         public List<RoomTypeModel> GetAvailableRoomType(DateTime startDate, DateTime endDate)
         {
-            _db.LoadData<RoomTypeModel, dynamic>("db_spRoomTypes_GetAvailableTypes",
+            return _db.LoadData<RoomTypeModel, dynamic>("spRoomTypes_GetAvailableTypes",
                                                  new { startDate, endDate },
-                                                 "SqlDb",
+                                                 connectionStringName,
                                                   true);
         }
     }

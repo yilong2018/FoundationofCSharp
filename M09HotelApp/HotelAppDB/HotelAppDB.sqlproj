@@ -56,17 +56,17 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="dob" />
-    <Folder Include="dob\tables" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\tables" />
     <Folder Include="Scripts" />
     <Folder Include="Publish Profiles" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dob\tables\RoomTypes.sql" />
-    <Build Include="dob\tables\Rooms.sql" />
-    <Build Include="dob\tables\Guests.sql" />
-    <Build Include="dob\tables\Bookings.sql" />
-    <Build Include="dob\db_spRoomTypes_GetAvailableTypes.sql" />
+    <Build Include="dbo\tables\RoomTypes.sql" />
+    <Build Include="dbo\tables\Rooms.sql" />
+    <Build Include="dbo\tables\Guests.sql" />
+    <Build Include="dbo\tables\Bookings.sql" />
+    <Build Include="dbo\spRoomTypes_GetAvailableTypes.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
